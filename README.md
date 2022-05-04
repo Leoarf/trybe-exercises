@@ -54,7 +54,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
@@ -248,9 +248,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 36: Python
 
 - [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e ExceÃ§Ãµes_
-- [ ] 35-3: _Entrada e SaÃ­da de dados_
-- [ ] 36-4: _Entrada e SaÃ­da de dados_
+- [ ] 35-2: _Testes e Exceçõeses_
+- [ ] 35-3: _Entrada e Saída de dados_
+- [ ] 36-4: _Entrada e Saída de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
 
 # [...]
