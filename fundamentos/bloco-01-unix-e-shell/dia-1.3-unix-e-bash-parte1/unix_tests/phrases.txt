@@ -1,0 +1,6 @@
+Firefox
+Chrome
+Opera
+Maxthon
+Edge
+Internet Explorer
