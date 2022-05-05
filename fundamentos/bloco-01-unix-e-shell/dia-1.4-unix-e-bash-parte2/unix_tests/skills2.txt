@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Chrome
+Linux
+VSCode
+HTML
+CSS
