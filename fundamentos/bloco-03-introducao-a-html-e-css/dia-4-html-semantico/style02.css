@@ -18,3 +18,48 @@ h1 {
     font-size: 0.825rem;
     text-transform: uppercase;
 }
+
+nav {
+    text-align: center;
+    background-color: whitesmoke;    
+}
+
+body {
+    background-color: white;
+}
+
+#menunav {
+    font-family: GeoEditBold,sans-serif;
+    font-size: 0.625rem;
+    line-height: 1.2;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+    color: #000;
+    list-style: none;
+    display: inline-block;
+}
+
+.navitems {
+    display: inline-block;
+    letter-spacing: 10px;
+    line-height: 30px;
+}
+
+#articletitle {
+    font-weight: 400;
+    color: #000;
+    font-family: GeoEditBold,Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Helvetica,Arial,sans-serif;
+    font-size: 38px;
+    line-height: 1.211;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+.subtitles {
+    font-family: GeoEditBold,Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    line-height: 1.214;
+    font-weight: 400;
+    color: #000;
+}
