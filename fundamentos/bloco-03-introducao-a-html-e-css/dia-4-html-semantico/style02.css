@@ -62,4 +62,14 @@ body {
     line-height: 1.214;
     font-weight: 400;
     color: #000;
+    margin-left: 40px;
+}
+
+.liarticles {
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: Georgia,Times New Roman,Times,serif;
+    color: #333;
+    max-width: 30%;
 }
