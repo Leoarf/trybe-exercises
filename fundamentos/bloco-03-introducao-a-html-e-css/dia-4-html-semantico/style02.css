@@ -1,75 +1,101 @@
 * {
+    padding: 0;
     margin: 0;
 }
 
-header {
-    background-color: #000;
-    padding: 10px;
-    
-}
-
-h1 {
-    text-align: center;
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: 3px;
-    line-height: 1.5;
-    font-style: normal;
-    font-size: 0.825rem;
-    text-transform: uppercase;
-}
-
-nav {
-    text-align: center;
-    background-color: whitesmoke;    
-}
-
 body {
-    background-color: white;
+    background-color: whitesmoke;
+}
+header {
+    background-color: rgb(0, 115, 255);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+}
+nav {
+    background-color: rgba(21, 25, 60, 0.6);
+    letter-spacing: 100px;
 }
 
-#menunav {
-    font-family: GeoEditBold,sans-serif;
-    font-size: 0.625rem;
-    line-height: 1.2;
-    letter-spacing: 0.1875rem;
-    text-transform: uppercase;
-    color: #000;
+li {
+    display: inline;
     list-style: none;
-    display: inline-block;
+    letter-spacing: normal;
 }
 
-.navitems {
-    display: inline-block;
-    letter-spacing: 10px;
-    line-height: 30px;
-}
-
-#articletitle {
-    font-weight: 400;
-    color: #000;
-    font-family: GeoEditBold,Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Helvetica,Arial,sans-serif;
-    font-size: 38px;
-    line-height: 1.211;
-    padding-top: 20px;
-    padding-bottom: 20px;
+#articlegeneral {
     margin-left: 10px;
 }
 
-.subtitles {
-    font-family: GeoEditBold,Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Helvetica,Arial,sans-serif;
-    font-size: 24px;
-    line-height: 1.214;
-    font-weight: 400;
-    color: #000;
-    margin-left: 40px;
+#informacoesgerais {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 200px;
 }
 
-.liarticles {
-    list-style: none;
-    margin-top: 15px;
+#fotoestomatopoda{
+    width: 450px;
+    float: left;
+}
+
+#paragrafoprincipal {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#sectiongroup {
     margin-left: 20px;
-    font-family: Georgia,Times New Roman,Times,serif;
-    color: #333;
-    max-width: 30%;
+    margin-bottom: 20px;
+}
+
+.sectionp {
+    max-width: 20%;
+    margin-right: 3px;
+    text-align: center;
+    display: flex;
+    display:inline-block;
+}
+
+.fotosartigos {
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+aside {
+    display: inline-block;
+    width: 13%;
+    margin-left: 30px;
+    height: 125px;
+    color: black;
+    background-color: #DED6D1;
+    margin-top: 10px;
+}
+#subsection {
+    margin-left: 20px;
+    display: inline-block;
+    background-color: #DED6D1;
+    width: 176px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    height: 50px;]
+}
+
+footer p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
