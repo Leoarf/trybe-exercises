@@ -8,3 +8,5 @@ for(let i = 0; i < numbers.length; i += 1) {
 }
 
 console.log(maiorNumero);
+
+// Utilizando for, descubra qual o maior valor contido no array e imprima-o;
