@@ -33,7 +33,7 @@
   </head>
   <body>
     <header>
-      <h1 class="title">Exercício 5.1 - JavaEscripit</h1>
+      <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
     </header>
     <main class="main-content">
       <section class="center-content">
@@ -55,8 +55,45 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-      document.getElementsByTagName('p')[0].innerText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi incidunt dolorem neque. Officiis, voluptat um! Architecto eligendi officiis dolorum quia rem expedita, quam incidunt voluptatum hic optio sapiente et voluptates at?"
       
+        // Exercício 1
+        function mudarTexto () {
+          let texto1 = document.getElementsByTagName('p')[1];
+          texto1.innerText = 'Ganhando pelo menos 3.500 e trabalhando em uma empresa daora';
+        }
+        mudarTexto ();
+        // Exercício 2
+        function mudarCorLados () {
+          let texto2 = document.getElementsByClassName('main-content')[0];
+          texto2.style.backgroundColor = 'rgb(76,164,109)';
+        }
+        mudarCorLados ();
+        // Exercício 3
+        function mudarCorCentro () {
+          let texto3 = document.getElementsByTagName('section')[0];
+          texto3.style.backgroundColor = 'white'
+        }
+        mudarCorCentro ();
+        // Exercício 4
+        function arrumarTexto () {
+          let texto4 = document.getElementsByClassName('title')[0];
+          texto4.innerText = 'Exercício 5.1 - JavaScript';
+        }
+        arrumarTexto ();
+        // Exercício 5 
+        function mudarParaMaiusculo() {
+          let texto5 = document.getElementsByTagName('p')[0];
+          texto5.innerHTML = texto5.innerHTML.toUpperCase();
+        }
+        mudarParaMaiusculo ();
+        // Exercício 6
+        function imprimirTag () {
+          let texto6 = document.getElementsByTagName('p');
+            for (let index = 0; index < texto6.length; index += 1) {
+                console.log(texto6[index].innerHTML);
+              }
+        }
+      imprimirTag ();
     </script>
   </body>
 </html>
