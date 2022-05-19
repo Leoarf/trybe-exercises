@@ -7,7 +7,7 @@ for(let i = 1; i <= 25; i += 1) {
 console.log(arrayvazio);
 
 for(let i = 0; i < arrayvazio.length; i +=1) {
-    let varteste = (arrayvazio[i] % 2);
+    let varteste = (arrayvazio[i] / 2);
     console.log(varteste);
 }
 

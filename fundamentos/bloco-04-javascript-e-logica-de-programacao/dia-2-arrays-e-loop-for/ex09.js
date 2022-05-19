@@ -8,3 +8,6 @@ for (let i = 0; i < numbers.length; i += 1) {
 let media = soma / numbers.length;
 
 console.log(media);
+
+// Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
+
