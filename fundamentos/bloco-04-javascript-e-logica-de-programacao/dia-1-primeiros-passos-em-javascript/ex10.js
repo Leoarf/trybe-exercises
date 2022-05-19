@@ -1,6 +1,6 @@
 const a = true;
 
-if(a == true) {
+if(a === true) {
     console.log('a é positive');
 }
 else if (a === false) {
