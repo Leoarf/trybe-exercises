@@ -27,4 +27,4 @@ function maisRepetido(numeros) {
     }
 console.log (contNumero);
 return contNumero;
-}
+};
