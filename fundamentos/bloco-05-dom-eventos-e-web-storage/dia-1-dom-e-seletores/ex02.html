@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="paragraphs">Dê uma cor para este parágrafo!</p>
+      <h4 class ="subtitle">Subtítulo</h4>
+      <p class="paragraphs">Segundo parágrafo!</p>
+    </header>
+    <script>
+      document.querySelector("#page-title").innerText = 'Blade runner 2049';
+      document.querySelectorAll(".subtitle")[0].style.color = 'yellow';
+      document.querySelectorAll(".paragraphs")[0].style.color = 'blue';
+      document.querySelectorAll(".paragraphs")[1].style.color = 'green';
+    </script>
+  </body>
+</html>
+
+<!-- Adicione uma classe igual para os dois parágrafos.
+Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName;
+Altere algum estilo do primeiro deles.
+Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName. -->
+
+<!-- Para praticar, substitua todas as funções que você usou no exercício anterior por querySelector e/ou querySelectorAll. -->
