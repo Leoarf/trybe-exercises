@@ -42,10 +42,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _[Projeto - Pixel Arts]()_
-- [ ] 5-6: _[Projeto - Meme Generator [BÒNUS]]()_
+- [ ] 5-6: _[Projeto - Meme Generator [BÔNUS]]()_
 - [ ] 5-7: _[Projeto - Lista de tarefas [BÔNUS]]()_
 - [ ] 5-7: _[Projeto - Adivinhe a Cor [BÔNUS]]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa [BONÛS]]()_
+- [ ] 5-7: _[Projeto - Carta Misteriosa [BÔNUS]]()_
 
 ##### Bloco 6: HTML & CSS avançado
 
