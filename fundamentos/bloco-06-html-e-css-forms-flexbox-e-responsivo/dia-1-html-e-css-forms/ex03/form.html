@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trybetrip</title>
+    <style>
+      #title {
+        font-weight: bold;
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      #sortsection {
+        height: 600px;
+        width: 600px;
+        margin: auto;
+      }
+      .allfield {
+          font-size: large;
+          background-color: aliceblue;
+      }
+      #buttons {
+          text-align: right;
+          margin-top: 5px;
+      }
+      #inputemail {
+          margin-left: 1px; /* toc não me permitiu deixar desalinhado haha :P */
+      }
+      body {
+          background: linear-gradient(red, orange, purple);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Concorra a uma viagem !</h1>
+    </header>
+
+    <form id="sortsection" action="">
+        <fieldset class ="allfield">
+            <label id="input1" for="inputname">Nome:
+                <input required minlength="10" maxlength="40" name="name" placeholder="digite seu nome completo" id="inputname" type="text"/> <br/>
+            </label>
+            <label id="input2" for="inputemail">Email:
+                <input required minlength="10" maxlength="50" name="email" placeholder="digite seu email" id="inputemail" type="email"/> <br/>
+            </label>
+        </fieldset>
+
+        <fieldset class ="allfield">
+            <p>Escolha o seu destino favorito:</p>
+            <label for="cidade">Cidade
+                <input type="radio" id="cidade" name="destino" value="cidade"/>
+            </label>
+            <label for="campo">Campo
+                <input type="radio" id="campo" name="destino" value="campo"/>
+            </label>
+            <label for="praia">Praia
+                <input type="radio" id="praia" name="destino" value="praia"/>
+            </label>
+            <label for="montanhas">Montanhas
+                <input type="radio" id="montanhas" name="destino" value="montanhas"/>
+            </label>
+        </fieldset>
+
+        <fieldset class ="allfield">
+            <p>Por que você merece a viagem?</p>
+            <textarea maxlength="500" name="testimonial" cols="60" rows="10"></textarea> <br/>
+            <p>Escolha a data ideal para sua viagem:</p>
+            <label id="input3" for="traveldate">Data:
+                <input name="date" id="traveldate" type="date"/> <br/>
+            </label>
+        </fieldset>
+
+        <fieldset class ="allfield">
+            <label for="news">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <input id="news" name="news" type="checkbox"/> <br/>
+            </label>
+            <label for="contract">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input id="contract" name="contract" type="checkbox"/>
+            </label>
+        </fieldset>
+
+        <div id="buttons">
+            <button id="submit" type="submit">Enviar</button>
+            <button id="reset" type="reset">Limpar</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
