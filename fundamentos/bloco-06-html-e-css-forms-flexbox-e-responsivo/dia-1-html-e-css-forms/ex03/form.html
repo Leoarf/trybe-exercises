@@ -14,20 +14,35 @@
         font-family: 'Courier New', Courier, monospace;
       }
       #sortsection {
-        height: 600px;
+        height: 100%;
         width: 600px;
         margin: auto;
-      }
-      .allfield {
-          font-size: large;
-          background-color: aliceblue;
+        background-color: white;
+        padding: 30px;
+        border-radius: 30px;
+        border: 2px solid black;
       }
       #buttons {
           text-align: right;
-          margin-top: 5px;
+          margin-top: 10px;
       }
       #inputemail {
           margin-left: 1px; /* toc não me permitiu deixar desalinhado haha :P */
+      }
+      #inputemail, #inputname {
+          width: 80%;
+          padding: 6px;
+          margin-top: 5px;
+      }
+      #textarea {
+          resize: none;
+          width: 100%;
+          height: 70px;
+          border: none;
+          background-color: white;
+      }
+      .line-content {
+          margin-top: 15px;
       }
       body {
           background: linear-gradient(red, orange, purple);
@@ -39,17 +54,18 @@
       <h1 id="title">Concorra a uma viagem !</h1>
     </header>
 
-    <form id="sortsection" action="">
-        <fieldset class ="allfield">
+    <form id="sortsection" method="get" action="">
+        
+        <div class="line-content">
             <label id="input1" for="inputname">Nome:
                 <input required minlength="10" maxlength="40" name="name" placeholder="digite seu nome completo" id="inputname" type="text"/> <br/>
             </label>
             <label id="input2" for="inputemail">Email:
                 <input required minlength="10" maxlength="50" name="email" placeholder="digite seu email" id="inputemail" type="email"/> <br/>
             </label>
-        </fieldset>
+        </div>
 
-        <fieldset class ="allfield">
+        <div class="line-content">
             <p>Escolha o seu destino favorito:</p>
             <label for="cidade">Cidade
                 <input type="radio" id="cidade" name="destino" value="cidade"/>
@@ -63,25 +79,30 @@
             <label for="montanhas">Montanhas
                 <input type="radio" id="montanhas" name="destino" value="montanhas"/>
             </label>
-        </fieldset>
+        </div>
 
-        <fieldset class ="allfield">
-            <p>Por que você merece a viagem?</p>
-            <textarea maxlength="500" name="testimonial" cols="60" rows="10"></textarea> <br/>
+        <div class="line-content">
+            <fieldset>
+                <legend>Por que você merece a viagem?</legend>
+                <textarea id = "textarea" maxlength="500" name="testimonial"></textarea>
+            </fieldset>
+        </div>
+        
+        <div class="line-content">
             <p>Escolha a data ideal para sua viagem:</p>
-            <label id="input3" for="traveldate">Data:
-                <input name="date" id="traveldate" type="date"/> <br/>
-            </label>
-        </fieldset>
+                <label id="input3" for="traveldate">Data:
+                    <input name="date" id="traveldate" type="date"/> <br/>
+                </label>
+        </div>
 
-        <fieldset class ="allfield">
+        <div class="line-content">
             <label for="news">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
                 <input id="news" name="news" type="checkbox"/> <br/>
             </label>
             <label for="contract">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros (obrigatório).
-                <input required id="contract" name="contract" type="checkbox"/>
+                <input checked required id="contract" name="contract" type="checkbox"/>
             </label>
-        </fieldset>
+        </div>
 
         <div id="buttons">
             <button id="submit" type="submit">Enviar</button>
