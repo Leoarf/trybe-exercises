@@ -25,10 +25,4 @@ function textInputValidation() {
   }
 }
 
-function changeFormStyle () {
-  form.style.padding = '50px'
-  title.style.textAlign = 'center'
-}
-
-changeFormStyle ()
 // Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.

@@ -8,57 +8,65 @@
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    <header id="header" class="text-center mb-5">
         <h1 id="title">Concorra a uma viagem</h1>
     </header>
 
     <form id="sortsection" method="get" action="">
-        
-        <div class="form-group">
-            <label id="input1" for="inputname">Nome Completo:</label>
-            <input class="form-control" required minlength="10" maxlength="40" name="name" placeholder="digite seu nome completo" id="inputname" type="text"/>
+        <div class="container mb-3">
+                <label id="input1" for="inputname">Nome Completo:</label>
+                <input class="form-control" required minlength="10" maxlength="40" name="name" placeholder="digite seu nome completo" id="inputname" type="text"/>
         </div>
 
-        <div class="form-group">
-            <label id="input2" for="inputemail">E-mail:</label>
-            <input class="form-control" required minlength="10" maxlength="50" name="email" placeholder="digite seu email" id="inputemail" type="email"/>
-        </div>
-        
-        <div class="form-check-inline">
-            <p>Escolha o seu destino favorito:</p>
-            <label class="form-check-label" for="cidade">Cidade</label>
-            <input class="form-check-input" type="radio" id="cidade" name="destino" value="cidade"/>
-            <label class="form-check-label" for="campo">Campo</label>
-            <input class="form-check-input" type="radio" id="campo" name="destino" value="campo"/>
-            <label class="form-check-label" for="praia">Praia</label>
-            <input class="form-check-input" type="radio" id="praia" name="destino" value="praia"/>
-            <label class="form-check-label" for="montanhas">Montanhas</label>
-            <input class="form-check-input" type="radio" id="montanhas" name="destino" value="montanhas"/>
-        </div>
-
-        <div class="form-group">
-                <legend>Por que você merece a viagem?</legend>
-                <textarea class="form-control" id = "textarea" maxlength="500" name="testimonial"></textarea>
+        <div class="container mb-3">
+                <label id="input2" for="inputemail">E-mail:</label>
+                <input class="form-control" required minlength="10" maxlength="50" name="email" placeholder="digite seu email" id="inputemail" type="email"/>
         </div>
         
-        <div class="form-group">
-            <p>Escolha a data ideal para sua viagem:</p>
-            <label id="input3" for="traveldate">Data:</label>
-            <input class="form-control" name="date" id="traveldate" type="date"/>
+        <div class="container mb-3">
+            <div class="form-check-inline">
+                <p class="lead">Escolha o seu destino favorito:</p>
+                <label class="form-check-label" for="cidade">Cidade</label>
+                <input class="form-check-input" type="radio" id="cidade" name="destino" value="cidade"/>
+                <label class="form-check-label" for="campo">Campo</label>
+                <input class="form-check-input" type="radio" id="campo" name="destino" value="campo"/>
+                <label class="form-check-label" for="praia">Praia</label>
+                <input class="form-check-input" type="radio" id="praia" name="destino" value="praia"/>
+                <label class="form-check-label" for="montanhas">Montanhas</label>
+                <input class="form-check-input" type="radio" id="montanhas" name="destino" value="montanhas"/>
+            </div>
         </div>
 
-        <div>
-            <label for="news">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-            <input id="news" name="news" type="checkbox"/>
-            <label for="contract">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros (obrigatório).</label>
-            <input  required id="contract" name="contract" type="checkbox"/>
+        <div class="container mb-3">
+                <p class='lead'>Por que você merece a viagem?</p>
+                <textarea placeholder="Faça seu relato" class="form-control" id = "textarea" maxlength="500" name="testimonial"></textarea>
+        </div>
+        
+        <div class="container mb-3">
+            <div class="form-group">
+                <p class="lead">Escolha a data ideal para sua viagem:</p>
+                <label id="input3" for="traveldate">Data:</label>
+                <input class="form-control" name="date" id="traveldate" type="date"/>
+            </div>
         </div>
 
-        <div id="buttons">
-            <button class="btn btn-primary" id="submit" type="submit">Enviar</button>
-            <button class="btn btn-dark" id="reset" type="reset">Limpar</button>
+        <div class="container mb-3">
+            <div>
+                <label for="news">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                <input id="news" name="news" type="checkbox"/>
+                <label for="contract">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                <input  required id="contract" name="contract" type="checkbox"/>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div id="buttons">
+                <button class="btn btn-primary" id="submit" type="submit">Enviar</button>
+                <button class="btn btn-dark" id="reset" type="reset">Limpar</button>
+            </div>
         </div>
     </form>
     <script src="script.js"></script>
