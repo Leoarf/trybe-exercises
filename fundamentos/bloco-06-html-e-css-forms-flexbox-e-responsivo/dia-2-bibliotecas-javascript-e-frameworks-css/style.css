@@ -1,0 +1,22 @@
+body {
+    max-width: 50%;
+    margin: 50px auto;
+    background-color: gray;
+    background: linear-gradient(purple, red);
+}
+
+header {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 50px;
+    color: white;
+}
+
+#sortsection {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 20px;
+    color: white;
+}
