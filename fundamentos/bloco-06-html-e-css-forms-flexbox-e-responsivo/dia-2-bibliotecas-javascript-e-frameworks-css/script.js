@@ -1,8 +1,7 @@
 const buttonsubmit = document.querySelector("#submit");
 const inputname = document.querySelector("#inputname");
 const inputemail = document.querySelector("#inputemail");
-const form = document.querySelector('#sortsection');
-const title = document.querySelector('#title')
+const contract = document.querySelector("#contract");
 
 buttonsubmit.addEventListener("click", function (event) {
   // event.preventDefault();
@@ -23,6 +22,12 @@ function textInputValidation() {
       "Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip."
     );
   }
+}
+
+contract.addEventListener("change", activeSubmit);
+
+function activeSubmit() {
+  buttonsubmit.disabled = !contract.checked;
 }
 
 // Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
