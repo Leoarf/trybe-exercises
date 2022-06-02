@@ -1,6 +1,7 @@
 const buttonsubmit = document.querySelector("#submit");
 const inputname = document.querySelector("#inputname");
 const inputemail = document.querySelector("#inputemail");
+const contract = document.querySelector("#contract");
 
 buttonsubmit.addEventListener("click", function (event) {
   // event.preventDefault();
@@ -21,6 +22,12 @@ function textInputValidation() {
       "Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip."
     );
   }
+}
+
+contract.addEventListener('change', activeSubmit)
+
+function activeSubmit() {
+  buttonsubmit.disabled = !contract.checked;
 }
 
 // O formulário deverá permitir que a pessoa usuária insira os seguintes campos:
