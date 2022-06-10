@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <p>Informe dois números para realizar a soma:</p>
+    <label for="value1">Valor 1:</label>
+    <input type="text" id="value1" />
+    <label for="value2">Valor 2:</label>
+    <input type="text" id="value2" />
+    <button id="button">Somar</button>
+    <p id="result"></p>
+    <script>
+      const verifyInput = (number1, number2) => {
+        const valueOfInput1 = document.getElementById("value1").value;
+        const valueOfInput2 = document.getElementById("value2").value;
+        if (valueOfInput1 == "" || valueOfInput2 == "") {
+          throw new Error("Por favor, preencha o outro campo");
+        }
+      };
+      const isNan = (number) => {
+        if (isNaN(number)) {
+          throw new Error("Algum dos valores não é um número!");
+        }
+      };
+      function sum() {
+        try {
+          const number1 = document.getElementById("value1").value;
+          const number2 = document.getElementById("value2").value;
+          verifyInput(number1, number2);
+          isNan(number1);
+          isNan(number2);
+          const result = Number(number1) + Number(number2);
+          document.getElementById("result").innerHTML = `Resultado: ${result}`;
+        } catch (error) {
+          document.getElementById("result").innerHTML = `${error.message}`;
+        } finally {
+          document.getElementById("value1").value = "";
+          document.getElementById("value2").value = "";
+        }
+      }
+      window.onload = () => {
+        const button = document.getElementById("button");
+        button.addEventListener("click", sum);
+      };
+    </script>
+  </body>
+</html>
